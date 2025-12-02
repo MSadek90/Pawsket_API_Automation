@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CreateClient Suite">
+    <test name="CreateClient Test">
+        <classes>
+            <class name="TestCases.Auth.CreateClientTest"/>
+        </classes>
+    </test>
+</suite>

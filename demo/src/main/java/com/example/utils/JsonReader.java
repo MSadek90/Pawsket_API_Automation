@@ -11,12 +11,16 @@ import java.io.IOException;
 public class JsonReader {
  
 
-    private static final String filePath = "src/test/resources/TestData/user.json";
+   
+    private static ObjectMapper mapper = new ObjectMapper();
 
-
-    public static RegisterRequest[] readUsers() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(new File(filePath), RegisterRequest[].class);
+    public static <T> T readJson(String filePath, Class<T> clazz) {
+        try {
+            return mapper.readValue(new File(filePath), clazz);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to read JSON: " + filePath, e);
+        }
     }
 }
+
 

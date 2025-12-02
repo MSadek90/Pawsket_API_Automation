@@ -1,0 +1,9 @@
+{
+    "device_id": "Test device_id",
+    "device_type": "Test device_type",
+    "os": "Test os",
+    "timezone": "Test timezone",
+    "fcm_token": "Test fcm_token",
+    "app_version": "Test app_version",
+    "os_version": "Test os_version"
+}
